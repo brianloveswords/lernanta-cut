@@ -41,14 +41,14 @@
 
 <body>
  <div role="main-container">
-    <header role='main-navigation'>
+    <header role='main'>
       <div role="container">
         <nav role="language">
-          <a>English</a>
+          <a href='english'>English</a>
           <a>Portugués</a>
           <a>Español</a>
         </nav>
-        
+
         <h1>P2PU</h1>
         <nav>
           <ul>
@@ -64,39 +64,64 @@
               </ul>
             </li>
             <li><a>Join</a></li>
-            <li><input type='search' placeholder='Search'></li>
+            <li><input type='text' placeholder='Search'></li>
             <li role="login-link"><a>Login</a></li>
           </ul>
         </nav>
       </div>
     </header>
     
-    
     <section role="masthead">
       <div role="container">
-        <a>Find Your Course</a>
-        <a>Run a Course</a>
-        <h1>We are an <em>online</em> community that <em>enables learning</em>. <em>So</em></h1>
-        <p>P2PU isn't a school, there are no teachers or students just
-        peers. Individuals are responsible for learning together with the help
-        of a facilitator.</p>
+        <nav>
+          <a role="find-course">Find Your Course.</a>
+          <a role="run-course">Run a Course.</a>
+        </nav>
+        <h1>
+          We are an <em role="highlight-1">online</em> <br>
+          community that <br>
+          <em role="highlight-2">enables learning</em>. <em role="highlight-3">So</em>
+        </h1>
+        <p>
+          <em role="highlight-1">P</em><em role="highlight-2">2</em><em role="highlight-3">P</em><em role="highlight-4">U</em> isn&rsquo;t a school, there are no teachers or students just
+          peers. Individuals are responsible for learning together with the
+          help of a facilitator.
+        </p>
       </div>
     </section>
     
-    <section role="courses">
+    <section role="course-search">
       <div role="container">
-        <input type="search" placeholder="Find your courses here">
-        <nav>
-          <a>1</a>
+        <ul role="languages">
+          <li><a class="active">All</a></li>
+          <li><a>EN</a></li>
+          <li><a>PT</a></li>
+          <li><a>ES</a></li>
+        </ul>
+        
+        <nav role="pagination">
+          <label>page</label>
+          <a class="active">1</a>
           <a>2</a>
           <a>3</a>
           <a>4</a>
         </nav>
 
-        <ul id="courses">
+        <input type="text" placeholder="Find your courses here">
+      </div>
+    </section>        
+        
+    <section role="courses">
+      <div role="container">
+        <nav>
+          <a role="back">back</a>
+          <a role="forward">next</a>
+        </nav>
+        
+        <ul role="course-list">
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course1.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -105,7 +130,7 @@
 
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course2.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -114,7 +139,7 @@
 
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course3.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -123,7 +148,7 @@
 
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course4.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -132,7 +157,7 @@
 
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course5.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -141,7 +166,7 @@
 
           <li class="course">
             <h2>UX: Design para a Educação</h2>
-            <img src="course-image.png">
+            <img src="/images/tmp.course6.png">
             <p>
               Queres aprender a desenvolver ambientes de experiência de
               usuário a serem aplicados a vários sistemas? #webcraft #p2pu
@@ -149,21 +174,24 @@
           </li>
 
         </ul>
-
+      </div>
+      <br style="clear: both;">
+    </section>
+    
+    <section role="suggestion">
+      <div role="container">
         <h2>
           Couldn't find the course for you? <a>Suggest a course</a> or
           <a>volunteer to organize</a> one yourself.
         </h2>
-      <div role="container">
+      </div>
     </section>
     
-    
-    
-    <footer>
+    <footer role="main">
       <div role="container">
         <nav>
-          <ul>
-            <li><a>About Us</a></li>
+          <ul role="about-us">
+            <li>About Us</li>
             <li><a>What is P2PU</a></li>
             <li><a>Value</a></li>
             <li><a>Team</a></li>
@@ -171,24 +199,28 @@
             <li><a>Blog</a></li>
           </ul>
 
-          <ul>
-            <li><a>Contact Us</a></li>
+          <ul role="contact-us">
+            <li>Contact Us</li>
             <li><a>Contact Form</a></li>
             <li><a>Facebook</a></li>
             <li><a>Twitter</a></li>
             <li><a>Google Group</a></li>
           </ul>
 
-          <ul>
-            <li><a>License Info</a></li>
+          <ul role="license-info">
+            <li>License Info</li>
             <li><a>License</a></li>
             <li><a>Privacy Guidelines</a></li>
             <li><a>Terms of Use</a></li>
           </ul>
+        
+          <ul role="cc">
+            <li>Creative Commons BY SA</li>
+            <li role="icons"><a>CC BY SA</a></li>
+          </ul>
         </nav>
-        Creative Commons BY SA
-        CC BY SA
-      <div role="container">
+      </div>
+      <br style="clear: both;">
     </footer>
   </div> <!--! end of #container -->
 
