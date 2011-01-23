@@ -154,12 +154,21 @@ section[role="masthead"] nav a {
 section[role="masthead"] nav a[role="find-course"] {
   color: #fff;
   background: url("/images/bg.find-your-course.png") no-repeat;
+  height: 138px;
+  margin-bottom: 5px;
+}
+section[role="masthead"] nav a[role="find-course"]:hover {
+  background-position: 0 -175px;
 }
 section[role="masthead"] nav a[role="run-course"] {
   margin-left: 7px;
   padding-left: 33px;
   background: url("/images/bg.run-a-course.png") no-repeat;
   color: #5a6579;
+  height: 84px;
+}
+section[role="masthead"] nav a[role="run-course"]:hover {
+  background-position: 0 -121px;
 }
 section[role="masthead"] h1 {
   color: #a9b2c1;
