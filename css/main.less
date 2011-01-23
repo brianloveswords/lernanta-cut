@@ -17,7 +17,17 @@
   height: @height;
   width: @width;
 }
-
+.transition (@params) {
+  -moz-transition: @params;
+  -webkit-transition: @params;
+  transition: @params;
+}
+.box-shadow(@params) {
+  -webkit-box-shadow: 0 0 4px @orange;
+  -moz-box-shadow: 0 0 4px @orange;
+  box-shadow: 0 0 4px @orange;
+}
+      
 a { text-decoration: none; }
 
 em { font-style: normal; }
@@ -55,6 +65,8 @@ header[role="main"] {
   font-size: 17px;
   height: 218px;
   margin: 0 0 20px;
+  input::-webkit-input-placeholder { color: #fff;}
+  input:-moz-placeholder { color: #fff; }
   h1 { .image-replace('/images/logo.png', 262px, 218px); position: absolute; z-index: 2;}
   nav {
     position: absolute;
@@ -177,7 +189,10 @@ section[role="masthead"] {
 
 section[role="course-search"] {
   padding-bottom: 85px;
+  input::-webkit-input-placeholder { color: #fff;}
+  input:-moz-placeholder { color: #fff; }
   input {
+    .transition(all 0.2s);
     background: #bec8d9;
     border: 2px solid @orange;
     color: #fff;
@@ -185,6 +200,11 @@ section[role="course-search"] {
     padding: 7px 18px;
     font-size: 17px;
     background: #bec8d9 url('/images/icon.loupe.png') no-repeat 605px center;
+    outline: none;
+    &:focus {  
+      .transition(all 0.2s);
+      .box-shadow(0 0 4px @orange);
+    }
   }
   ul[role="languages"] {
     overflow: hidden;
