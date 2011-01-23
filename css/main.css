@@ -17,6 +17,7 @@ em[role="highlight-4"] {
   color: #ffec40;
 }
 body {
+  background: url('/images/bg.stripy.png');
   margin: 0;
   padding: 0;
   color: #5a6579;
@@ -44,10 +45,8 @@ nav[role="language"] a {
   margin: 0 0 0 5px;
 }
 header[role="main"] {
-  background: url('/images/bg.stripy.png');
   font-size: 17px;
   height: 218px;
-  margin: 0 0 20px;
   /* end nav > ul*/
 
 }
@@ -153,7 +152,8 @@ body[role="inner"] header[role="main"] h1 {
   z-index: 2;
 }
 section[role="masthead"] {
-  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px 0 40px;
 }
 section[role="masthead"] nav {
   float: right;
@@ -206,6 +206,7 @@ section[role="masthead"] p {
   line-height: 30px;
 }
 section[role="course-search"] {
+  background: #fff;
   padding-bottom: 85px;
 }
 section[role="course-search"] input::-webkit-input-placeholder {
@@ -290,9 +291,6 @@ section[role="course-search"] nav a.active {
 section[role="course-search"] nav a:hover {
   background: #cef200;
 }
-section[role="courses"] {
-  background: url('/images/bg.stripy.png');
-}
 section[role="courses"] nav a {
   width: 30px;
   background: #ffffff url('/images/icon.back.png') no-repeat center 0;
@@ -342,6 +340,7 @@ section[role="courses"] ul[role="course-list"] li p {
   line-height: 22px;
 }
 section[role="suggestion"] {
+  background: #fff;
   clear: both;
   line-height: 160px;
   text-align: center;
@@ -349,13 +348,14 @@ section[role="suggestion"] {
 }
 section[role="suggestion"] h2 {
   font-weight: normal;
+  margin: 0;
 }
 section[role="suggestion"] a {
   color: #36cdc4;
   text-decoration: underline;
 }
 footer[role="main"] {
-  background: url('/images/bg.stripy.png');
+  clear: both;
 }
 footer[role="main"] ul {
   margin-left: 104px;
@@ -413,7 +413,8 @@ header[role="title"] h2 {
   color: #5a6579;
 }
 section[role="press-sidebar"] {
-  background: url('/images/bg.stripy.png');
+  float: right;
+  width: 300px;
 }
 section[role="press-sidebar"] blockquote {
   font-size: 16px;
@@ -421,4 +422,9 @@ section[role="press-sidebar"] blockquote {
   background: url('/images/icon.quote.png') no-repeat;
   margin: 0;
   padding-top: 30px;
+}
+div[role="maincontent"] {
+  margin: auto;
+  width: 1000px;
+  min-height: 400px;
 }
