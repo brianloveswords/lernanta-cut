@@ -140,6 +140,18 @@ header[role="main"] nav > ul li[role="login-link"] a {
   background: #ffde00;
 }
 /* header */
+body[role="inner"] nav > ul {
+  margin-top: 40px;
+}
+body[role="inner"] header[role="main"] {
+  height: 120px;
+}
+body[role="inner"] header[role="main"] h1 {
+  position: absolute;
+  background-position: center center;
+  height: 120px;
+  z-index: 2;
+}
 section[role="masthead"] {
   margin-bottom: 40px;
 }
@@ -384,4 +396,29 @@ footer[role="main"] ul[role="cc"] li[role="icons"] a {
   margin: auto;
   overflow: hidden;
   text-indent: -999em;
+}
+header[role="title"] {
+  color: #a9b2c1;
+  height: 160px;
+}
+header[role="title"] h1 {
+  font-size: 58px;
+  font-weight: normal;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+header[role="title"] h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #5a6579;
+}
+section[role="press-sidebar"] {
+  background: url('/images/bg.stripy.png');
+}
+section[role="press-sidebar"] blockquote {
+  font-size: 16px;
+  font-family: Georgia;
+  background: url('/images/icon.quote.png') no-repeat;
+  margin: 0;
+  padding-top: 30px;
 }

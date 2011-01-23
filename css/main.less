@@ -136,6 +136,19 @@ header[role="main"] {
   } /* end nav > ul*/
 } /* header */
 
+body[role="inner"] {
+  nav > ul { margin-top: 40px; }
+  header[role="main"] {
+    height: 120px;
+    h1 {
+      position: absolute;
+      background-position: center center;
+      height: 120px;
+      z-index: 2;
+    }
+  }
+}
+
 section[role="masthead"] {
   margin-bottom: 40px;
   nav {
@@ -340,4 +353,22 @@ footer[role="main"] {
     overflow: hidden;
     text-indent: -999em;
   }
+}
+
+header[role="title"] {
+  color: #a9b2c1;
+  height: 160px; 
+  h1 { font-size: 58px; font-weight: normal; margin-top: 40px; text-transform: uppercase;}
+  h2 { font-size: 20px; font-weight: normal; color: @main-text-color; }
+}
+
+section[role="press-sidebar"] {
+  background: url('/images/bg.stripy.png');
+  blockquote {
+    font-size: 16px;
+    font-family: Georgia;
+    background: url('/images/icon.quote.png') no-repeat;
+    margin: 0;
+    padding-top: 30px;
+  }  
 }
