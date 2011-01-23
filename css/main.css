@@ -21,14 +21,32 @@ body {
   margin: 0;
   padding: 0;
   color: #5a6579;
-  font-family: "Arvo", "Helvetica";
+  font-family: "Arvo", "MuseoSlab 500", "Georgia";
 }
 input {
-  font-family: "Arvo", "Helvetica";
+  font-family: "Arvo", "MuseoSlab 500", "Georgia";
 }
 div[role="container"] {
   margin: auto;
   width: 1000px;
+}
+nav[role="pager"] a {
+  width: 30px;
+  background: #ffffff url('/images/icon.back.png') no-repeat center 0;
+  padding-top: 50px;
+  margin: 235px 0 0 0;
+  color: #a9b2c1;
+}
+nav[role="pager"] a:hover {
+  background-color: #cef200;
+  color: #5a6579;
+}
+nav[role="pager"] a[role="back"] {
+  float: left;
+}
+nav[role="pager"] a[role="next"] {
+  background-image: url('/images/icon.forward.png');
+  float: right;
 }
 nav[role="language"] {
   background: #ffffff url('/images/icon.world.png') no-repeat 5px center;
@@ -139,11 +157,11 @@ header[role="main"] nav > ul li[role="login-link"] a {
   background: #ffde00;
 }
 /* header */
-body[role="inner"] nav > ul {
-  margin-top: 40px;
-}
 body[role="inner"] header[role="main"] {
   height: 120px;
+}
+body[role="inner"] header[role="main"] nav > ul {
+  margin-top: 40px;
 }
 body[role="inner"] header[role="main"] h1 {
   position: absolute;
@@ -291,24 +309,6 @@ section[role="course-search"] nav a.active {
 section[role="course-search"] nav a:hover {
   background: #cef200;
 }
-section[role="courses"] nav a {
-  width: 30px;
-  background: #ffffff url('/images/icon.back.png') no-repeat center 0;
-  padding-top: 50px;
-  margin: 235px 0 0 0;
-  color: #a9b2c1;
-}
-section[role="courses"] nav a:hover {
-  background-color: #cef200;
-  color: #5a6579;
-}
-section[role="courses"] nav a[role="back"] {
-  float: left;
-}
-section[role="courses"] nav a[role="forward"] {
-  background-image: url('/images/icon.forward.png');
-  float: right;
-}
 section[role="courses"] ul[role="course-list"] {
   position: relative;
   top: -51px;
@@ -393,18 +393,20 @@ footer[role="main"] ul[role="cc"] li[role="icons"] a {
   background: url('/images/cc-icons.png') no-repeat;
   height: 65px;
   width: 147px;
-  margin: auto;
+  margin: 20px auto;
   overflow: hidden;
   text-indent: -999em;
 }
 header[role="title"] {
+  background: #fff;
   color: #a9b2c1;
   height: 160px;
+  padding-left: 35px;
 }
 header[role="title"] h1 {
   font-size: 58px;
   font-weight: normal;
-  margin-top: 40px;
+  padding: 30px 0 0;
   text-transform: uppercase;
 }
 header[role="title"] h2 {
@@ -412,16 +414,113 @@ header[role="title"] h2 {
   font-weight: normal;
   color: #5a6579;
 }
+section[role="showcase-navigation"] a {
+  position: absolute;
+  top: 200px;
+}
+section[role="showcase-navigation"] a[role="next"] {
+  margin-left: 650px;
+}
+section[role="stories"] {
+  margin-left: 40px;
+  width: 600px;
+  float: left;
+}
+section[role="stories"] img {
+  display: block;
+}
+section[role="stories"] header h1 {
+  background: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 55px;
+  margin: 0;
+  padding: 8px;
+}
+section[role="stories"] section {
+  font-size: 16px;
+  font-family: "Georgia";
+  line-height: 24px;
+  margin: 8px 0 0;
+  background: #fff;
+  padding: 8px;
+}
+section[role="stories"] footer {
+  background: #fff;
+  margin: 0;
+  font-size: 16px;
+  padding: 8px;
+  text-align: right;
+}
+section[role="stories"] footer a[role="next"] {
+  color: #5a6579;
+  background: url('/images/icon.arrow-right.png') no-repeat right center;
+  padding: 0 14px 0 0;
+  line-height: 22px;
+}
+section[role="stories"] p {
+  margin: 15px 0 0;
+}
+section[role="stories"] p:first-child {
+  margin: 0;
+}
+section[role="partners"] {
+  clear: both;
+  background: #fff;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+section[role="partners"] h1 {
+  font-weight: normal;
+  font-size: 18px;
+  background: #fff;
+  width: 80px;
+  top: -40px;
+  position: relative;
+  line-height: 40px;
+  padding: 0 11px;
+}
+section[role="partners"] ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 120px;
+}
+section[role="partners"] ul li:first-child {
+  margin-left: 0;
+}
 section[role="press-sidebar"] {
   float: right;
   width: 300px;
 }
-section[role="press-sidebar"] blockquote {
+section[role="press-sidebar"] ul {
   font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+  margin: 0;
+}
+section[role="press-sidebar"] ul li {
+  background: #fff;
+  margin: 10px 0 0;
+  padding: 6px;
+}
+section[role="press-sidebar"] blockquote {
   font-family: Georgia;
   background: url('/images/icon.quote.png') no-repeat;
   margin: 0;
-  padding-top: 30px;
+  padding: 38px 0 0 8px;
+}
+section[role="press-sidebar"] cite {
+  background: #ffffff url('/images/icon.external-link.png') no-repeat right bottom;
+  padding: 0 18px 0 8px;
+  color: #aaa;
+}
+section[role="press-sidebar"] h2 {
+  background: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  color: #5a6579;
+  line-height: 50px;
+  padding: 0 12px;
 }
 div[role="maincontent"] {
   margin: auto;

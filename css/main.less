@@ -40,14 +40,35 @@ body {
   background: url('/images/bg.stripy.png');
   margin: 0; padding: 0;
   color: @main-text-color;
-  font-family: "Arvo", "Helvetica";
+  font-family: "Arvo", "MuseoSlab 500", "Georgia";
 }
-input { font-family: "Arvo", "Helvetica"; }
+input { font-family: "Arvo", "MuseoSlab 500", "Georgia"; }
     
 div[role="container"] {
   margin: auto;
   width: 1000px;
 }
+
+nav[role="pager"] {
+  a {
+    width: 30px;
+    background: #fff url('/images/icon.back.png') no-repeat center 0;
+    padding-top: 50px;
+    margin: 235px 0 0 0;
+    color: #a9b2c1;
+  }
+  a:hover { background-color: @green; color: #5a6579; }
+
+  a[role="back"] {
+    float: left;
+  }
+  a[role="next"] {
+    background-image: url('/images/icon.forward.png');
+    float: right;
+  }
+}
+  
+
 nav[role="language"] {
   background: #fff url('/images/icon.world.png') no-repeat 5px center;
   line-height: 24px;
@@ -136,8 +157,8 @@ header[role="main"] {
 } /* header */
 
 body[role="inner"] {
-  nav > ul { margin-top: 40px; }
   header[role="main"] {
+    nav > ul { margin-top: 40px; }
     height: 120px;
     h1 {
       position: absolute;
@@ -260,25 +281,6 @@ section[role="course-search"] {
 }
 
 section[role="courses"] {
-  nav {
-    a {
-      width: 30px;
-      background: #fff url('/images/icon.back.png') no-repeat center 0;
-      padding-top: 50px;
-      margin: 235px 0 0 0;
-      color: #a9b2c1;
-    }
-    a:hover { background-color: @green; color: #5a6579; }
-    
-    a[role="back"] {
-      float: left;
-    }
-    a[role="forward"] {
-      background-image: url('/images/icon.forward.png');
-      float: right;
-    }
-  }
-  
   ul[role="course-list"] {
     position: relative;
     top: -51px;
@@ -350,29 +352,129 @@ footer[role="main"] {
     background: url('/images/cc-icons.png') no-repeat;
     height: 65px;
     width: 147px;
-    margin: auto;
+    margin: 20px auto;
     overflow: hidden;
     text-indent: -999em;
   }
 }
 
 header[role="title"] {
+  background: #fff;
   color: #a9b2c1;
   height: 160px; 
-  h1 { font-size: 58px; font-weight: normal; margin-top: 40px; text-transform: uppercase;}
-  h2 { font-size: 20px; font-weight: normal; color: @main-text-color; }
+  padding-left: 35px;
+  h1 {
+    font-size: 58px;
+    font-weight: normal;
+    padding: 30px 0 0;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: @main-text-color;
+  }
+}
+section[role="showcase-navigation"] {
+  a { position: absolute; top: 200px; }
+  a[role="next"] { margin-left: 650px; }
+}
+
+section[role="stories"] {
+  margin-left: 40px;
+  width: 600px;
+  float: left;
+  img { display: block; }
+  header h1 {
+    background: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 55px;
+    margin: 0;
+    padding: 8px;
+  }
+  section {
+    font-size: 16px;
+    font-family: "Georgia";
+    line-height: 24px;
+    margin: 8px 0 0;
+    background: #fff;
+    padding: 8px;
+  }
+  footer {
+    background: #fff;
+    margin: 0;
+    font-size: 16px;
+    padding: 8px;
+    text-align: right;
+    a[role="next"] {
+      color: #5a6579;
+      background: url('/images/icon.arrow-right.png') no-repeat right center;
+      padding: 0 14px 0 0;
+      line-height: 22px;
+    }
+  }
+  p { margin: 15px 0 0; }
+  p:first-child { margin: 0 }
+}
+section[role="partners"] {
+  clear: both;
+  background: #fff;
+  margin-top: 80px;
+  padding-bottom: 40px;
+  h1 {
+    font-weight: normal;
+    font-size: 18px;
+    background: #fff;
+    width: 80px;
+    top: -40px;
+    position: relative;
+    line-height: 40px;
+    padding: 0 11px;
+  }
+  ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 120px;
+  }
+  ul li:first-child {
+    margin-left: 0;
+  }
 }
 
 section[role="press-sidebar"] {
   float: right;
   width: 300px;
-  blockquote {
+  ul {
     font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    margin: 0;
+    li {
+      background: #fff;
+      margin: 10px 0 0;
+      padding: 6px;
+    }
+  }
+  blockquote {
     font-family: Georgia;
     background: url('/images/icon.quote.png') no-repeat;
     margin: 0;
-    padding-top: 30px;
-  }  
+    padding: 38px 0 0 8px;
+  }
+  cite {
+    background: #fff url('/images/icon.external-link.png') no-repeat right bottom;
+    padding: 0 18px 0 8px;
+    color: #aaa;
+  }
+  h2 {
+    background: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    color: #5a6579;
+    line-height: 50px;
+    padding: 0 12px;
+  }
 }
 div[role="maincontent"] {
   margin: auto;
