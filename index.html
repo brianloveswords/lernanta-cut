@@ -13,9 +13,9 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Lernanta GO</title>
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="P2PU.org">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,28 +27,168 @@
 
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/main.css">
 
+  <!-- Arvo font from google font api -->
+  <link href='http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+  
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
  
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.6.min.js"></script>
 
 </head>
 
 <body>
-
-  <div id="container">
-    <header>
-
+ <div role="main-container">
+    <header role='main-navigation'>
+      <div role="container">
+        <nav role="language">
+          <a>English</a>
+          <a>Portugués</a>
+          <a>Español</a>
+        </nav>
+        
+        <h1>P2PU</h1>
+        <nav>
+          <ul>
+            <li><a>Take a Course</a><li>
+            <li><a>Run a Course</a></li>
+            <li><a>Showcase</a></li>
+            <li>
+              <a>Schools</a>
+              <ul>
+                <li><a>General</a></li>
+                <li><a>Webcraft</a></li>
+                <li><a>SoSI</a></li>
+              </ul>
+            </li>
+            <li><a>Join</a></li>
+            <li><input type='search' placeholder='Search'></li>
+            <li role="login-link"><a>Login</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
-    <div id="main">
+    
+    <section role="masthead">
+      <div role="container">
+        <a>Find Your Course</a>
+        <a>Run a Course</a>
+        <h1>We are an <em>online</em> community that <em>enables learning</em>. <em>So</em></h1>
+        <p>P2PU isn't a school, there are no teachers or students just
+        peers. Individuals are responsible for learning together with the help
+        of a facilitator.</p>
+      </div>
+    </section>
+    
+    <section role="courses">
+      <div role="container">
+        <input type="search" placeholder="Find your courses here">
+        <nav>
+          <a>1</a>
+          <a>2</a>
+          <a>3</a>
+          <a>4</a>
+        </nav>
 
-    </div>
+        <ul id="courses">
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+          <li class="course">
+            <h2>UX: Design para a Educação</h2>
+            <img src="course-image.png">
+            <p>
+              Queres aprender a desenvolver ambientes de experiência de
+              usuário a serem aplicados a vários sistemas? #webcraft #p2pu
+            </p>
+          </li>
+
+        </ul>
+
+        <h2>
+          Couldn't find the course for you? <a>Suggest a course</a> or
+          <a>volunteer to organize</a> one yourself.
+        </h2>
+      <div role="container">
+    </section>
+    
+    
     
     <footer>
+      <div role="container">
+        <nav>
+          <ul>
+            <li><a>About Us</a></li>
+            <li><a>What is P2PU</a></li>
+            <li><a>Value</a></li>
+            <li><a>Team</a></li>
+            <li><a>Advisors</a></li>
+            <li><a>Blog</a></li>
+          </ul>
 
+          <ul>
+            <li><a>Contact Us</a></li>
+            <li><a>Contact Form</a></li>
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Google Group</a></li>
+          </ul>
+
+          <ul>
+            <li><a>License Info</a></li>
+            <li><a>License</a></li>
+            <li><a>Privacy Guidelines</a></li>
+            <li><a>Terms of Use</a></li>
+          </ul>
+        </nav>
+        Creative Commons BY SA
+        CC BY SA
+      <div role="container">
     </footer>
   </div> <!--! end of #container -->
 
@@ -56,8 +196,8 @@
   <!-- Javascript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script>
   
   
   <!-- scripts concatenated and minified via ant build script-->
@@ -76,7 +216,6 @@
   <script src="js/profiling/config.js"></script>
   <!-- end profiling code -->
 
-
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
   <script>
@@ -89,6 +228,5 @@
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
   </script>
-  
 </body>
 </html>

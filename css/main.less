@@ -1,0 +1,101 @@
+@main-text-color: #5a6579;
+
+
+.rounded-corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+
+}
+.image-replace (@url, @width, @height) {
+  text-indent: -999em;
+  overflow: hidden;
+  background: url(@url) no-repeat;
+  height: @height;
+  width: @width;
+}
+
+body {
+  margin: 0; padding: 0;
+  color: @main-text-color;
+  font-family: "Arvo", "Helvetica";
+}
+
+div[role='container'] {
+  margin: auto;
+  width: 1000px;
+}
+nav[role='language'] {
+  line-height: 0px;
+  overflow: visible;
+  text-align: right;
+}
+header[role='main-navigation'] {
+  background: url('/images/bg.stripy.png');
+  font-size: 17px;
+  height: 218px;
+  h1 { .image-replace('/images/logo.png', 262px, 218px); position: absolute; }
+  nav > ul {
+    margin-top: 90px;
+    line-height: 42px;
+    height: 42px;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: -200px;
+    background: #fff;
+    list-style: none;
+    li:first-child { margin-left: 0; }
+    li {
+      float: left;
+      margin-left: 22px;
+      padding: 0;
+      a {
+        padding: 0px 10px;
+        color: #a9b2c1;
+      }
+      a:hover {
+        background: #36cdc4;
+        color: #fff;
+      }
+      ul {
+        display: none;
+        position: relative;
+        left: -26px;
+        top: -10px;
+        background: #36cdc4 url('/images/bg.arrows.png') no-repeat;
+        padding: 10px 30px 0 8px;
+      }
+      ul li {
+        a { color: #fff }
+        font-size: 16px;
+        margin: 0;
+        float: none;
+        height: auto;
+      }
+      input {
+        background: #bec8d9 url('/images/icon.loupe.png') no-repeat 100px center;
+        border: 0;
+        color: #fff;
+        height: 42px;
+        width: 88px;
+        line-height: 42px;
+        padding: 0 24px 0;
+        margin: 0;
+        position: relative;
+        top: -2px;
+      }
+    } /* end nav > ul li */
+    li[role='login-link'] {
+      margin-left: 0;
+      a {
+        color: @main-text-color;
+        display: block;
+        height: 42px;
+        text-align: center;
+        padding: 0 24px 0;
+        width: 88px;
+        background: #ffde00;
+      }
+    } /* end nav > ul*/
+  }
+}
