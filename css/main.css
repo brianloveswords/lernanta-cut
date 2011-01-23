@@ -503,6 +503,16 @@ section[role="press-sidebar"] ul li {
   margin: 10px 0 0;
   padding: 6px;
 }
+section[role="press-sidebar"] ul a[role="more"] {
+  margin: 10px 0 0;
+  float: right;
+  display: block;
+  padding: 6px;
+  background: #fff;
+}
+section[role="press-sidebar"] ul a[role="more"]:hover {
+  background: #cef200;
+}
 section[role="press-sidebar"] blockquote {
   font-family: Georgia;
   background: url('/images/icon.quote.png') no-repeat;
