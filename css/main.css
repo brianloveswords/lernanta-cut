@@ -273,18 +273,24 @@ section[role="courses"] ul[role="course-list"] {
   padding: 0 0 0 30px;
   list-style: none;
 }
+section[role="courses"] ul[role="course-list"] a:hover img {
+  border-bottom: 5px solid #cef200;
+}
 section[role="courses"] ul[role="course-list"] li {
   background: #fff;
   margin: 0 0 20px 10px;
   float: left;
   width: 300px;
 }
+section[role="courses"] ul[role="course-list"] li img {
+  border-bottom: 5px solid #fff;
+}
 section[role="courses"] ul[role="course-list"] li h2 {
   padding: 15px;
   font-size: 17px;
   font-weight: normal;
 }
-section[role="courses"] p {
+section[role="courses"] ul[role="course-list"] li p {
   font-family: "Georgia";
   padding: 5px 14px;
   font-size: 16px;

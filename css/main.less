@@ -247,24 +247,27 @@ section[role="courses"] {
     margin: 0;
     padding: 0 0 0 30px;
     list-style: none;
+    a:hover img { border-bottom: 5px solid @green; }
     li {
       background: #fff;
       margin: 0 0 20px 10px;
-      
       float: left;
       width: 300px;
+      img {
+        border-bottom: 5px solid #fff;
+      }
       h2 {
         padding: 15px;
         font-size: 17px;
         font-weight: normal;
       }
+      p {
+        font-family: "Georgia";
+        padding: 5px 14px;
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
-  }
-  p {
-    font-family: "Georgia";
-    padding: 5px 14px;
-    font-size: 16px;
-    line-height: 22px;
   }
 }
 section[role="suggestion"] {
